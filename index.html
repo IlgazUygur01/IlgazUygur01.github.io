@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilgaz Uygur</title>
     <style>
+        /* Genel stil ayarları */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            line-height: 1.6;
         }
 
         header {
             text-align: center;
+            margin-bottom: 40px;
         }
 
         header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
         }
 
         nav {
@@ -28,33 +39,47 @@
         }
 
         nav a {
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
-            color: #000;
-        }
-
-        .about-me {
-            margin-top: 40px;
-        }
-
-        .recently {
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }
-
-        .recently p {
-            margin-bottom: 10px;
-        }
-
-        .recently a {
             color: #0066cc;
+            font-weight: bold;
         }
 
+        nav a:hover {
+            color: #003366;
+        }
+
+        /* About Me bölümü */
+        .about-me {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about-me h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .about-me p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* My Goals bölümü */
         .my-goals {
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .my-goals h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
 
         .my-goals ul {
@@ -64,6 +89,61 @@
 
         .my-goals li {
             margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* New Skills & Interests bölümü */
+        .skills-interests {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .skills-interests h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .skills-interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-interests li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Contact Me bölümü */
+        .contact-me {
+            background-color: #0066cc;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-me h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .contact-me p {
+            font-size: 1em;
+        }
+
+        .contact-me a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-me a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -75,7 +155,7 @@
             <a href="index.html">Home</a> |
             <a href="CSP Projects.html">CSP Projects</a> |
             <a href="CS50 Courses.html">CS50 Courses</a> |
-            <a href="Develop in Swift.html">Develop in Swift</a> |
+            <a href="Develop in Swift.html">Develop in Swift</a>
         </nav>
     </header>
     
@@ -90,6 +170,21 @@
             <li>Achieving excellent grades 📈</li>
             <li>Excelling in AP courses 🏆</li>
         </ul>
+    </section>
+
+    <section class="skills-interests">
+        <h2>Skills & Interests 🌟</h2>
+        <ul>
+            <li>Proficient in Java and Python 🐍</li>
+            <li>Interest in Artificial Intelligence and Machine Learning 🤖</li>
+            <li>Enthusiastic about web development and design 💻</li>
+            <li>Passionate about problem-solving and algorithm design 🧠</li>
+        </ul>
+    </section>
+
+    <section class="contact-me">
+        <h2>Contact Me 📬</h2>
+        <p>If you would like to get in touch, please feel free to <a href="mailto:ilgaz@example.com">email me</a> or connect with me on <a href="https://www.linkedin.com/in/ilgaz-uygur" target="_blank">LinkedIn</a>.</p>
     </section>
 
 </body>
