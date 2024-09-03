@@ -18,7 +18,7 @@
 
 ###
 
-<p align="left">✨ Studying at Hisar Since 2023<br>📚 I'm currently learning Java and Python<br>🎯 My goals are getting 5 from my AP's</p>
+<p align="left">✨ Studying at Hisar Since 2023<br>📚 I'm currently learning Java and Python<br>🎯 My goals are getting good grades from my AP's</p>
 
 ###
 
