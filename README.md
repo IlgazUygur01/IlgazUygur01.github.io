@@ -6,7 +6,7 @@
 
 ###
 
-<p align="left">My name is Ilgaz Uygur and I'm a from Türkiye</p>
+<p align="left">My name is Ilgaz Uygur and I'm  from Türkiye</p>
 
 ###
 
