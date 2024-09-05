@@ -80,87 +80,93 @@
 
             <!-- Project 1 -->
             <div class="development">
-                <h3>Project 1: Simple Calculator</h3>
-                <p>This Swift project demonstrates a basic calculator using UIKit.</p>
-                <img src="path-to-your-image/calculator-app.png" alt="Calculator App Screenshot">
+                <h3>Project 1: Weather Advisory</h3>
+                <p>This Swift project gives a weather-based recommendation on what item to take with you based on the forecast.</p>
+                <img src="path-to-your-image/weather-app.png" alt="Weather Advisory App Screenshot">
                 <pre><code>
-// Swift code for Calculator App
-import UIKit
+// Swift code for Weather Advisory
+let weather = "rain"
 
-class ViewController: UIViewController {
-    @IBOutlet weak var displayLabel: UILabel!
-    
-    var currentOperation: Operation?
-    var firstNumber: Double = 0
-    var isTypingNumber = false
-    
-    @IBAction func numberPressed(_ sender: UIButton) {
-        // Handle number button press
-    }
-    
-    @IBAction func operationPressed(_ sender: UIButton) {
-        // Handle operation button press
-    }
+if weather == "rain" {
+    print("Take an umbrella with you!")
+} else if weather == "snow" {
+    print("Take a scarf with you!")
+} else if weather == "sunny" {
+    print("Don't forget your sunglasses!")
+} else {
+    print("No special item recommendation.")
 }
                 </code></pre>
-                <p><a href="https://github.com/yourusername/calculator-app">View on GitHub</a></p>
             </div>
 
             <!-- Project 2 -->
             <div class="development">
-                <h3>Project 2: Weather Forecast App</h3>
-                <p>This app shows weather information for any location using an API.</p>
-                <img src="path-to-your-image/weather-app.png" alt="Weather App Screenshot">
+                <h3>Project 2: Grade Calculator</h3>
+                <p>This project calculates the average of two grades and determines whether the student has passed or failed.</p>
+                <img src="path-to-your-image/grade-app.png" alt="Grade Calculator Screenshot">
                 <pre><code>
-// Swift code for Weather App
-import UIKit
-import CoreLocation
+// Swift code for Grade Calculator
+let grade1 = 70
+let grade2 = 40
 
-class WeatherViewController: UIViewController, CLLocationManagerDelegate {
-    let locationManager = CLLocationManager()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Request location
-        locationManager.requestWhenInUseAuthorization()
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // Update weather based on location
-    }
+let average = (grade1 + grade2) / 2
+
+if average >= 50 {
+    print("Passed")
+} else {
+    print("Failed")
 }
                 </code></pre>
-                <p><a href="https://github.com/yourusername/weather-app">View on GitHub</a></p>
             </div>
 
             <!-- Project 3 -->
             <div class="development">
-                <h3>Project 3: Task Management App</h3>
-                <p>This is a to-do list app built with SwiftUI, where users can manage their tasks efficiently.</p>
-                <img src="path-to-your-image/task-app.png" alt="Task Management App Screenshot">
+                <h3>Project 3: Name Printer</h3>
+                <p>This app prints a name 10 times in a loop.</p>
+                <img src="path-to-your-image/name-printer-app.png" alt="Name Printer App Screenshot">
                 <pre><code>
-// Swift code for Task Management App
-import SwiftUI
+// Swift code for Name Printer
+let name = "Ilgaz Uygur"
 
-struct ContentView: View {
-    @State private var tasks = [String]()
-    @State private var newTask = ""
-
-    var body: some View {
-        VStack {
-            TextField("Enter a new task", text: $newTask)
-            Button("Add Task") {
-                tasks.append(newTask)
-                newTask = ""
-            }
-            List(tasks, id: \.self) { task in
-                Text(task)
-            }
-        }
-    }
+for i in 1...10 {
+    print(name)
 }
                 </code></pre>
-                <p><a href="https://github.com/yourusername/task-app">View on GitHub</a></p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="development">
+                <h3>Project 4: Simple Calculator</h3>
+                <p>This Swift project performs basic arithmetic operations such as addition, subtraction, division, and multiplication, and displays the result.</p>
+                <img src="path-to-your-image/calculator-app.png" alt="Calculator App Screenshot">
+                <pre><code>
+// Swift code for Simple Calculator
+var sayi1 = 5
+var sayi2 = 10
+
+let toplam = sayi1 + sayi2
+print("Bu iki sayinin toplami : \(toplam)")
+
+let cikarma = sayi1 - sayi2
+print("Bu iki sayinin farki : \(cikarma)")
+
+let bolme = sayi1 / sayi2
+if sayi2 == 0 {
+    print("sayi 2 sifir olamaz")
+} else {
+    print("Ilk saynin 2.ye bolunmus hali:  \(bolme)")
+}
+
+let carpma = sayi1 * sayi2
+print ("Bu iki sayinin carpimi: \(carpma)")
+
+let modalma = sayi1 % sayi2
+print("1. Sayinin 2.Sayiya bolumunden kalan \(modalma)")
+
+for i in 1...toplam {
+    print(i)
+}
+                </code></pre>
             </div>
 
         </section>
@@ -171,3 +177,4 @@ struct ContentView: View {
     </footer>
 </body>
 </html>
+
