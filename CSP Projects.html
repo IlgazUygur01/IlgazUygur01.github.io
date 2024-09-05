@@ -64,7 +64,7 @@
         <section id="projects">
             <h2>My First Project: My GitHub Site</h2>
             <div class="project">
-                <img src="path-to-your-image/github-site-image.png" alt="GitHub Site Screenshot">
+                <img src="/mnt/data/image.png" alt="GitHub Site Screenshot">
                 <div class="project-description">
                     <p>This is my first project where I created my own GitHub Pages website. The site showcases all of my computer science projects and developments, providing a portfolio that I can update regularly. It is built using HTML, CSS, and some JavaScript to enhance interactivity. You can view the site at: <a href="https://IlgazUygur.github.io" target="_blank">My GitHub Site</a>.</p>
                 </div>
@@ -73,35 +73,9 @@
             <h2>Second Project: Connect Four Game</h2>
             <div class="project">
                 <div class="project-description">
-                    <p>The Connect Four Game is a classic two-player game built in Swift. The objective of the game is to be the first to form a line of four discs of the same color either horizontally, vertically, or diagonally. I used Swift's UIKit framework to design the game interface and handle user interactions.</p>
+                    <p>The Connect Four Game is a classic two-player game built in Scratch. You can play the game and see the code through the following link:</p>
+                    <p><a href="YOUR_SCRATCH_LINK_HERE" target="_blank">Play Connect Four on Scratch</a></p>
                 </div>
-                <pre><code>
-// Swift code for Connect Four Game
-// Example of a simple Connect Four Game setup
-
-class ConnectFour {
-    var board: [[String]] = Array(repeating: Array(repeating: ".", count: 7), count: 6)
-    
-    func dropDisc(column: Int, disc: String) {
-        for row in (0..<board.count).reversed() {
-            if board[row][column] == "." {
-                board[row][column] = disc
-                break
-            }
-        }
-    }
-    
-    func printBoard() {
-        for row in board {
-            print(row.joined(separator: " "))
-        }
-    }
-}
-
-let game = ConnectFour()
-game.dropDisc(column: 3, disc: "R")
-game.printBoard()
-                    </code></pre>
             </div>
         </section>
     </div>
