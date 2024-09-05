@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How I aaaa Created My GitHub Site</title>
+    <title>How I Created My GitHub Site</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #eef2f3;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -18,38 +19,66 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
         section {
-            padding: 20px;
+            padding: 30px;
             background: #fff;
             margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
         }
         .image-container {
             text-align: center;
             margin-top: 20px;
         }
         .image-container img {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         .description {
             text-align: justify;
             margin-top: 20px;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin-top: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
         a {
             color: #007bff;
             text-decoration: none;
+            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -68,8 +97,7 @@
             </p>
 
             <div class="image-container">
-                <img src="Hata.png" alt="Hata.png">
-                <!-- Replace 'your-image.jpg' with the actual screenshot of the error or another relevant image -->
+                <img src="Hata.png" alt="GitHub error screenshot">
             </div>
 
             <p class="description">
@@ -88,5 +116,8 @@
         </section>
     </div>
 
+    <footer>
+        <p>Created by Ilgaz Uygur | © 2024</p>
+    </footer>
 </body>
 </html>
