@@ -45,11 +45,6 @@
         .development p {
             margin: 5px 0;
         }
-        .development img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
         pre {
             background-color: #f4f4f4;
             padding: 10px;
@@ -82,7 +77,6 @@
             <div class="development">
                 <h3>Project 1: Weather Advisory</h3>
                 <p>This Swift project gives a weather-based recommendation on what item to take with you based on the forecast.</p>
-                <img src="path-to-your-image/weather-app.png" alt="Weather Advisory App Screenshot">
                 <pre><code>
 // Swift code for Weather Advisory
 let weather = "rain"
@@ -103,7 +97,6 @@ if weather == "rain" {
             <div class="development">
                 <h3>Project 2: Grade Calculator</h3>
                 <p>This project calculates the average of two grades and determines whether the student has passed or failed.</p>
-                <img src="path-to-your-image/grade-app.png" alt="Grade Calculator Screenshot">
                 <pre><code>
 // Swift code for Grade Calculator
 let grade1 = 70
@@ -123,7 +116,6 @@ if average >= 50 {
             <div class="development">
                 <h3>Project 3: Name Printer</h3>
                 <p>This app prints a name 10 times in a loop.</p>
-                <img src="path-to-your-image/name-printer-app.png" alt="Name Printer App Screenshot">
                 <pre><code>
 // Swift code for Name Printer
 let name = "Ilgaz Uygur"
@@ -138,36 +130,37 @@ for i in 1...10 {
             <div class="development">
                 <h3>Project 4: Simple Calculator</h3>
                 <p>This Swift project performs basic arithmetic operations such as addition, subtraction, division, and multiplication, and displays the result.</p>
-                <img src="path-to-your-image/calculator-app.png" alt="Calculator App Screenshot">
                 <pre><code>
 // Swift code for Simple Calculator
-var sayi1 = 5
-var sayi2 = 10
+var number1 = 5
+var number2 = 10
 
-let toplam = sayi1 + sayi2
-print("Bu iki sayinin toplami : \(toplam)")
+let addition = number1 + number2
+print("The sum of these two numbers: \(addition)")
 
-let cikarma = sayi1 - sayi2
-print("Bu iki sayinin farki : \(cikarma)")
+let subtraction = number1 - number2
+print("The difference of these two numbers: \(subtraction)")
 
-let bolme = sayi1 / sayi2
-if sayi2 == 0 {
-    print("sayi 2 sifir olamaz")
+let division = number1 / number2
+if number2 == 0 {
+    print("Number 2 cannot be zero")
 } else {
-    print("Ilk saynin 2.ye bolunmus hali:  \(bolme)")
+    print("The result of dividing the first number by the second:  \(division)")
 }
 
-let carpma = sayi1 * sayi2
-print ("Bu iki sayinin carpimi: \(carpma)")
+let multiplication = number1 * number2
+print ("The product of these two numbers: \(multiplication)")
 
-let modalma = sayi1 % sayi2
-print("1. Sayinin 2.Sayiya bolumunden kalan \(modalma)")
+let remainder = number1 % number2
+print("The remainder when the first number is divided by the second: \(remainder)")
 
-for i in 1...toplam {
+for i in 1...addition {
     print(i)
 }
                 </code></pre>
             </div>
+
+            <p><a href="swiftdocumentation.html">View Documentation</a></p>
 
         </section>
     </div>
@@ -177,4 +170,3 @@ for i in 1...toplam {
     </footer>
 </body>
 </html>
-
