@@ -3,70 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Idea Notes</title>
+    <title>Ilgaz Uygur's Big Idea Notes</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
         header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 40px;
+            border-bottom: 4px solid #007bff;
         }
-
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
         section {
-            background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            background: #fff;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h2 {
+        section h2 {
             font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #0066cc;
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
         }
-
-        p {
+        .note {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .note:hover {
+            transform: scale(1.02);
+        }
+        .note p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 30px;
             font-size: 1em;
-            color: #555;
+            border-top: 4px solid #007bff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AP CSP College Board Notes</h1>
+        <div class="container">
+            <h1>Ilgaz Uygur's Big Idea Notes</h1>
+        </div>
     </header>
+    
+    <div class="container">
+        <section id="notes">
+            <h2>AP CSP College Board Notes</h2>
+            
+            <div class="note">
+                <h3>Topic 1.1: Collaboration</h3>
+                <p>Collaboration is key to integrating different perspectives and reducing bias in coding. There are many effective ways to work with coding partners, ensuring a more comprehensive approach to problem-solving.</p>
+            </div>
 
-    <section>
-        <h2>Topic 1.1: Collaboration</h2>
-        <p>Collaboration is key to integrating different perspectives and reducing bias in coding. There are many effective ways to work with coding partners, ensuring a more comprehensive approach to problem-solving.</p>
-    </section>
+            <div class="note">
+                <h3>Topic 1.2: Computer Innovations</h3>
+                <p>Computer innovations come in both digital and physical forms. Many things we rely on daily are examples of these innovations. To understand their impact, we need to ask: Why do they exist? What problems do they address? What new capabilities do they provide?</p>
+                <p>Inputs can take various forms, including tactile, auditory, visual, and text (which includes numeric data). Programs respond to inputs, and at their core, are made up of sequences of statements that adhere to specific programming rules. Code segments are key components within these programs.</p>
+            </div>
 
-    <section>
-        <h2>Topic 1.2: Computer Innovations</h2>
-        <p>Computer innovations come in both digital and physical forms. Many things we rely on daily are examples of these innovations. To understand their impact, we need to ask: Why do they exist? What problems do they address? What new capabilities do they provide?</p>
-        <p>Inputs can take various forms, including tactile, auditory, visual, and text (which includes numeric data). Programs respond to inputs, and at their core, are made up of sequences of statements that adhere to specific programming rules. Code segments are key components within these programs.</p>
-    </section>
+            <div class="note">
+                <h3>Topic 1.3: Program Development</h3>
+                <p>The development of programs starts by identifying constraints, user needs, and specific goals. Developers go through brainstorming, planning, and then building their programs. Since programs are typically created by teams, it’s essential to give credit to each contributor.</p>
+                <p>Proper documentation is important to track work and recognize contributions. Many programming languages allow comments within the code, making documentation straightforward.</p>
+            </div>
 
-    <section>
-        <h2>Topic 1.3: Program Development</h2>
-        <p>The development of programs starts by identifying constraints, user needs, and specific goals. Developers go through brainstorming, planning, and then building their programs. Since programs are typically created by teams, it’s essential to give credit to each contributor.</p>
-        <p>Proper documentation is important to track work and recognize contributions. Many programming languages allow comments within the code, making documentation straightforward.</p>
-    </section>
+            <div class="note">
+                <h3>Topic 1.4: Errors in Programming</h3>
+                <p>Errors are an inherent part of programming, and they come in several forms: logic errors, syntax errors, runtime errors, and overflow errors.</p>
+                <p>Logic errors occur when the programmer’s approach to solving the problem is flawed, while syntax errors happen due to incorrect use of the programming language, like typos. Runtime errors, often referred to as bugs, occur during execution, and an overflow error happens when the program tries to handle values beyond its defined limits.</p>
+                <p>Various strategies, such as test cases, hand tracing, debugging, and visualization tools, help resolve these errors. Syntax errors are typically the easiest to identify, while logic errors often take more effort to fix. Testing is integrated into the development process to ensure the program handles all potential inputs and runs as intended.</p>
+            </div>
+        </section>
+    </div>
 
-    <section>
-        <h2>Topic 1.4: Errors in Programming</h2>
-        <p>Errors are an inherent part of programming, and they come in several forms: logic errors, syntax errors, runtime errors, and overflow errors.</p>
-        <p>Logic errors occur when the programmer’s approach to solving the problem is flawed, while syntax errors happen due to incorrect use of the programming language, like typos. Runtime errors, often referred to as bugs, occur during execution, and an overflow error happens when the program tries to handle values beyond its defined limits.</p>
-        <p>Various strategies, such as test cases, hand tracing, debugging, and visualization tools, help resolve these errors. Syntax errors are typically the easiest to identify, while logic errors often take more effort to fix. Testing is integrated into the development process to ensure the program handles all potential inputs and runs as intended.</p>
-    </section>
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
 </body>
 </html>
+
