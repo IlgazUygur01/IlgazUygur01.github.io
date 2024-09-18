@@ -70,90 +70,61 @@
         <section id="developments">
             <h2>Swift Developments</h2>
 
-            <!-- Project 1 -->
             <div class="development">
-                <h3>Project 1: Weather Advisory</h3>
-                <p>This Swift project gives a weather-based recommendation on what item to take with you based on the forecast.</p>
+                <h3>Project 5: Rectangle Area</h3>
+                <p>This Swift project calculates the area of a rectangle using length and width.</p>
                 <pre><code>
-// Swift code for Weather Advisory
-let weather = "rain"
-
-if weather == "rain" {
-    print("Take an umbrella with you!")
-} else if weather == "snow" {
-    print("Take a scarf with you!")
-} else if weather == "sunny" {
-    print("Don't forget your sunglasses!")
-} else {
-    print("No special item recommendation.")
+func rectangleArea(length: Int, width: Int) -> Int {
+    let area = length * width
+    return area
 }
+
+let area = rectangleArea(length: 10, width: 5)
+print("The area of the rectangle is: \(area)")
                 </code></pre>
             </div>
 
-            <!-- Project 2 -->
             <div class="development">
-                <h3>Project 2: Grade Calculator</h3>
-                <p>This project calculates the average of two grades and determines whether the student has passed or failed.</p>
+                <h3>Project 6: Current Date and Time</h3>
+                <p>This project returns the current date and time as a string.</p>
                 <pre><code>
-// Swift code for Grade Calculator
-let grade1 = 70
-let grade2 = 40
+import Foundation
 
-let average = (grade1 + grade2) / 2
-
-if average >= 50 {
-    print("Passed")
-} else {
-    print("Failed")
+func currentDateAndTime() -> String {
+    let date = Date()
+    return "\(date)"
 }
+
+let currentDate = currentDateAndTime()
+print("Current date and time: \(currentDate)")
                 </code></pre>
             </div>
 
-            <!-- Project 3 -->
             <div class="development">
-                <h3>Project 3: Name Printer</h3>
-                <p>This app prints a name 10 times in a loop.</p>
+                <h3>Project 7: Random Number Generator</h3>
+                <p>This Swift project generates a random number between 1 and 100.</p>
                 <pre><code>
-// Swift code for Name Printer
-let name = "Ilgaz Uygur"
-
-for i in 1...10 {
-    print(name)
+func randomNumber() -> Int {
+    return Int.random(in: 1...100)
 }
+
+let number = randomNumber()
+print("Random number: \(number)")
                 </code></pre>
             </div>
 
-            <!-- Project 4 -->
             <div class="development">
-                <h3>Project 4: Simple Calculator</h3>
-                <p>This Swift project performs basic arithmetic operations such as addition, subtraction, division, and multiplication, and displays the result.</p>
+                <h3>Project 8: Book Details</h3>
+                <p>This project returns multiple values: the title and page count of a book.</p>
                 <pre><code>
-// Swift code for Simple Calculator
-var number1 = 5
-var number2 = 10
-
-let addition = number1 + number2
-print("The sum of these two numbers: \(addition)")
-
-let subtraction = number1 - number2
-print("The difference of these two numbers: \(subtraction)")
-
-let division = number1 / number2
-if number2 == 0 {
-    print("Number 2 cannot be zero")
-} else {
-    print("The result of dividing the first number by the second:  \(division)")
+func bookDetails() -> (title: String, pageCount: Int) {
+    let bookTitle = "Programming with Swift"
+    let pageCount = 350
+    return (bookTitle, pageCount)
 }
 
-let multiplication = number1 * number2
-print ("The product of these two numbers: \(multiplication)")
-
-let remainder = number1 % number2
-print("The remainder when the first number is divided by the second: \(remainder)")
-
-for i in 1...addition {
-    print(i)
-}
+let book = bookDetails()
+print("Book title: \(book.title), Page count: \(book.pageCount)")
                 </code></pre>
             </div>
 
