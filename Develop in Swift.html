@@ -65,14 +65,13 @@
             <h1>Ilgaz Uygur's Swift Developments</h1>
         </div>
     </header>
-    
+
     <div class="container">
         <section id="developments">
             <h2>Swift Developments</h2>
 
             <div class="development">
                 <h3>Project 1: Weather Advisory</h3>
-                <p>This Swift project gives a weather-based recommendation on what item to take with you based on the forecast.</p>
                 <pre><code>
 let weather = "rain"
 
@@ -89,7 +88,6 @@ if weather == "rain" {
 
             <div class="development">
                 <h3>Project 2: Grade Calculator</h3>
-                <p>This project calculates the average of two grades and determines whether the student has passed or failed.</p>
                 <pre><code>
 let grade1 = 70
 let grade2 = 40
@@ -105,7 +103,6 @@ if average >= 50 {
 
             <div class="development">
                 <h3>Project 3: Name Printer</h3>
-                <p>This app prints a name 10 times in a loop.</p>
                 <pre><code>
 let name = "Ilgaz Uygur"
 
@@ -117,7 +114,6 @@ for i in 1...10 {
 
             <div class="development">
                 <h3>Project 4: Simple Calculator</h3>
-                <p>This Swift project performs basic arithmetic operations such as addition, subtraction, division, and multiplication, and displays the result.</p>
                 <pre><code>
 var number1 = 5
 var number2 = 10
@@ -132,11 +128,11 @@ let division = number1 / number2
 if number2 == 0 {
     print("Number 2 cannot be zero")
 } else {
-    print("The result of dividing the first number by the second:  \(division)")
+    print("The result of dividing the first number by the second: \(division)")
 }
 
 let multiplication = number1 * number2
-print ("The product of these two numbers: \(multiplication)")
+print("The product of these two numbers: \(multiplication)")
 
 let remainder = number1 % number2
 print("The remainder when the first number is divided by the second: \(remainder)")
@@ -149,7 +145,6 @@ for i in 1...addition {
 
             <div class="development">
                 <h3>Project 5: Rectangle Area</h3>
-                <p>This Swift project calculates the area of a rectangle using length and width.</p>
                 <pre><code>
 func rectangleArea(length: Int, width: Int) -> Int {
     let area = length * width
@@ -163,7 +158,6 @@ print("The area of the rectangle is: \(area)")
 
             <div class="development">
                 <h3>Project 6: Current Date and Time</h3>
-                <p>This project returns the current date and time as a string.</p>
                 <pre><code>
 import Foundation
 
@@ -179,7 +173,6 @@ print("Current date and time: \(currentDate)")
 
             <div class="development">
                 <h3>Project 7: Random Number Generator</h3>
-                <p>This Swift project generates a random number between 1 and 100.</p>
                 <pre><code>
 func randomNumber() -> Int {
     return Int.random(in: 1...100)
@@ -192,7 +185,6 @@ print("Random number: \(number)")
 
             <div class="development">
                 <h3>Project 8: Book Details</h3>
-                <p>This project returns multiple values: the title and page count of a book.</p>
                 <pre><code>
 func bookDetails() -> (title: String, pageCount: Int) {
     let bookTitle = "Programming with Swift"
@@ -207,7 +199,6 @@ print("Book title: \(book.title), Page count: \(book.pageCount)")
 
             <div class="development">
                 <h3>Project 9: Pizza Slice Distribution (Non-working Code)</h3>
-                <p>This code is written for the distribution of pizza slices, but it will not work due to both syntax and logic errors, as it was written on paper. The code has issues with variable assignment and conditions, which need to be adjusted for it to run correctly in a Swift environment. Below is the non-functional code:</p>
                 <pre><code>
 func pizzaDagitma() {
     let totalPizza = 8
@@ -215,29 +206,29 @@ func pizzaDagitma() {
     let Mehmet = 1
     let Ibo = 2
     let Egin = 1
-    
+
     var kalan = totalPizza - Ahmet
     if Ahmet > totalPizza {
         print("Cok aliosn :)")
     } else {
         print("Alabilirsin kalan \(kalan)")
     }
-    
-    kalan = kalan - Mehmet
+
+    kalan -= Mehmet
     if Mehmet > kalan {
         print("2 ol!")
     } else {
         print("Alabilirsin kalan pizza \(kalan)")
     }
-    
-    kalan = kalan - Ibo
+
+    kalan -= Ibo
     if Ibo > kalan {
         print("Bu kadar alamazsin")
     } else {
         print("Alabilirsin kalan \(kalan)")
     }
-    
-    kalan = kalan - Egin
+
+    kalan -= Egin
     if Egin > kalan {
         print("o kadar alamazsin")
     } else {
@@ -247,11 +238,77 @@ func pizzaDagitma() {
                 </code></pre>
             </div>
 
+            <div class="development">
+                <h3>Project 10: Student Names</h3>
+                <pre><code>
+import UIKit
+
+var ogrenciler = ["Ali", "Ayse", "Fatma", "Mehmet", "Elif"]
+for ogrenci in ogrenciler {
+    print("Öğrenci: \(ogrenci)")
+}
+                </code></pre>
+            </div>
+
+            <div class="development">
+                <h3>Project 11: Student Enrollment Check</h3>
+                <pre><code>
+let isStudent = true
+let isEnrolled = false
+
+if isStudent && isEnrolled {
+    print("You are enrolled in a class.")
+} else {
+    print("You are not enrolled in a class.")
+}
+                </code></pre>
+            </div>
+
+            <div class="development">
+                <h3>Project 12: People Classification</h3>
+                <pre><code>
+var insanlar: [(isMale: Bool, age: Int)] = [
+    (age: 20, isMale: true),
+    (age: 21, isMale: true),
+    (age: 22, isMale: true),
+    (age: 23, isMale: false),
+    (age: 24, isMale: true),
+    (age: 25, isMale: false),
+    (age: 26, isMale: true),
+    (age: 27, isMale: false),
+    (age: 28, isMale: true),
+    (age: 9, isMale: false)
+]
+
+for insan in insanlar {
+    if insan.age >= 18 && insan.isMale {
+        print("Erkek yetişkin")
+    } else if insan.age >= 18 && !insan.isMale {
+        print("Kadın yetişkin")
+    } else {
+        print("Yetişkin değil")
+    }
+}
+                </code></pre>
+            </div>
+
+            <div class="development">
+                <h3>Project 13: Factorial Calculation</h3>
+                <pre><code>
+let numbers: [Int] = [3, 4, 5]
+
+for number in numbers {
+    var factorial = 1
+    for i in 1...number {
+        factorial *= i
+    }
+    print("\(number) factorial is \(factorial)")
+}
+                </code></pre>
+            </div>
+
         </section>
     </div>
 
     <footer>
-        <p></p>
-    </footer>
-</body>
-</html>
+        <p>&copy; 2024
